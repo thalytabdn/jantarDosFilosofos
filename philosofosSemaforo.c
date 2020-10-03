@@ -15,7 +15,7 @@
 #define TEMPO_COMENDO 15       /*tempo do filoso comendo em segundos */
 
 
-typedef pthread_mutex_t semaphore;        /*semaforos sao um tipo mutex da biblioteca pthread*/
+typedef pthread_mutex_t semaphore;        
 int state[N];                             /*arranjo para controlar o estado de cada um*/
 pthread_mutex_t mutex;                    /*exclusao mutua para as regioes criticas*/
 pthread_mutex_t s[N];                     /*um semaforo por filosofo*/
